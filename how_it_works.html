@@ -3,7 +3,30 @@
 
 <style>
 
-    
+.nav a{
+    color: black;
+}
+
+#sign_in {
+    font-weight: bold;
+}
+
+#try_it {
+    font-weight: bold;
+}
+
+#focusfont {
+    font-size: 5vh;
+}
+
+#focusfont2 {
+    font-size: 2.65vh;
+}
+
+#focusfont3 {
+    font-size: 1.4vh;
+}
+        
 </style>
 
 <head>
@@ -18,26 +41,44 @@
 
 </head>
 
-<body>
-  <header>
-    <nav class="nav justify-content-between m-5">
-        <div class="col-9 nav d-flex flex-md-row justify-content-evenly">
-            <a class=""> <img src="./logo/Logo.png">
-            <a class="nav-link m-3" href="#">Active</a>
-            <a class="nav-link m-3" href="#">Link</a>
-            <a class="nav-link m-3" href="#">Link</a>
-        </div>
-        <div class="col-3 d-flex flex-md-row justify-content-start pe-5 mt-3" style="max-height: 3vh;">
-            <button type="button" class="btn btn-outline-primary mx-3">Sign In</button>
-            <button type="button" class="btn btn-primary mx-3 pe-3">Try It Free</button>
-        </div>
-    </nav>
+<body class="">
+    <header class="">
+        <nav class="nav justify-content-between p-3 m-5">
+            <div class="col-9 nav d-flex flex-md-row justify-content-evenly">
+                <a class=""> <img src="./logo/Logo.png">
+                <a class="nav-link m-3 " href="#">Home</a>
+                <a class="nav-link m-3" href="#">Features</a>
+                <a class="nav-link m-3" href="#">Pricing</a>
+                <a class="nav-link m-3" href="#">How It Works</a>
+                <a class="nav-link m-3" href="#">Support</a>
+            </div>
+            <div class="col-3 d-flex flex-md-row justify-content-center mt-3" style="max-height: 3vh;">
+                <button id = sign_in type="submit" class="btn btn-outline-primary mx-3">Sign In</button>
+                <button id = try_it type="submit" class="btn btn-primary mx-3 pe-3">Try It Free</button>
+            </div>
+        </nav>
 
-</header>
-  <!-- <main>
-    <div class="title">
-
-    </div> -->
+    </header>
+   
+<main>
+    <div class="row">
+        <div class="col p-3 justify-content-between">
+            <div class="card-body">
+                <h1 id = "focusfont" class="card-title ps-4"><strong>Focus on</strong></h1>
+                <h1 id = "focusfont" class="card-title ps-4 mb-2"><strong>Your Business</strong></h1>
+                <h3 id = "focusfont2" class="card-subtitle ps-4 mb-2">Let Us Handle Everything Else</h3>
+                <h6 id = "focusfont3"  class="card-text text-body-secondary ps-4 mb-2 col-13">Subscription Billing, Powered with revenue retention tools and a seamless customer experience - without the technical hurdles.</h6>
+            </div>
+        </div>
+        <div class="col">
+            <a class=""> <img src="./how_it_works/Header-Side-1.png">
+        </div>
+    </div>
+    </div>
+                
+            
+        
+    </div>
 
     <!-- Start below here Mabel-->
     <div class="precard-1 text-center">
@@ -72,7 +113,7 @@
 
     
 
-  </main>
+</main>
   <footer>
     <!-- place footer here -->
   </footer>
