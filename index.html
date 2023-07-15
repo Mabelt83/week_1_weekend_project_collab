@@ -27,37 +27,53 @@
     font-size: 1.4vh;
 }
 
-.bg-black {
+/* .bg-black {
     height: 200px;
     width: 200px;
-}
+} */
+
 
 </style>
 
 <head>
-<title>Home Page CRM</title>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<nav class="nav justify-content-between p-3 m-5">
-    <div class="col-9 nav d-flex flex-md-row justify-content-evenly">
-        <a class=""> <img src="./logo/Logo.png">
-        <a class="nav-link m-3 " href="#">Home</a>
+    <title>Landing</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+  </head>
+
+<body> 
+<div class="container mw-100">
+  <nav class="nav justify-content-between p-3 my-3">
+    <div class="col-6 order-0 col-lg-2 text-center">
+        <img src="./logo/Logo.png" class="img-fluid">
+    </div>
+    <div class="col-12 col-lg-7 order-1 order-lg-0 nav d-flex flex-md-row justify-content-evenly">
+      <a class="nav-link m-3 " href="#">Home</a>
         <a class="nav-link m-3" href="#">Features</a>
         <a class="nav-link m-3" href="#">Pricing</a>
         <a class="nav-link m-3" href="#">How It Works</a>
         <a class="nav-link m-3" href="#">Support</a>
     </div>
-    <div class="col-3 d-flex flex-md-row justify-content-center mt-3" style="max-height: 3vh;">
-        <button id = sign_in type="submit" class="btn btn-outline-primary mx-3">Sign In</button>
-        <button id = try_it type="submit" class="btn btn-primary mx-3 pe-3">Try It Free</button>
+    <div class="col-6 col-lg-3 order-0 order-lg-1 d-flex flex-md-row justify-content-center mt-3" style="max-height: 3vh;">
+      <form action="/sign_up.html" method="get">
+        <button type="submit" class="btn btn-outline-primary mx-3 fw-bold">Try It Free</button>
+      </form>
+      <form action="/sign_in.html" method="get">
+        <button type="submit" class="btn btn-primary mx-3 pe-3 fw-bold">Sign In</button>
+      </form>
     </div>
-</nav>
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    
-</head>
+  </nav>  
+</div> 
 <Main>       
     <Body>
         <div class="row">
@@ -66,8 +82,7 @@
                     <h1 id = "focusfont" class="card-title ps-4"><strong>Focus on</strong></h1>
                     <h1 id = "focusfont" class="card-title ps-4 mb-2"><strong>Your Business</strong></h1>
                     <h3 id = "focusfont2" class="card-subtitle ps-4 mb-2">Let Us Handle Everything Else</h3>
-                    <h6 id = "focusfont3"  class="card-text text-body-secondary ps-4 mb-2 col">Subscription Billing, Powered with revenue retention tools and a</h6>
-                    <h6 id = "focusfont3"  class="card-text text-body-secondary ps-4 mb-2 col">seamless customer experience - without the technical hurdles.</h6>
+                    <h6 id = "focusfont3"  class="card-text text-body-secondary ps-4 mb-2 col">Subscription Billing, Powered with revenue retention tools and a seamless customer experience - without the technical hurdles.</h6>
                 </div>
             </div>
             <div class="col">
