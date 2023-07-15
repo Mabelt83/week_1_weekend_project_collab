@@ -1,37 +1,94 @@
 <!doctype html>
 <html lang="en">
 
+<style>
+  .nav a {
+    color: black;
+  }
+
+  #sign_in {
+    font-weight: bold;
+  }
+
+  #try_it {
+    font-weight: bold;
+  }
+
+  #focusfont {
+    font-size: 5vh;
+  }
+
+  #focusfont2 {
+    font-size: 2.65vh;
+  }
+
+  #focusfont3 {
+    font-size: 1.4vh;
+  }
+
+  .btn-green,
+  .btn-green:active,
+  .btn-green:visited {
+    background-color: #7CD325 !important;
+    color: white !important;
+  }
+
+  .btn-green:hover {
+    background-color: #65ad1e !important;
+  }
+
+  .btn-light {
+    color: #0850F8 !important;
+  }
+  
+  
+  
+  
+</style>
+
 <head>
-  <title>How it Works</title>
+  <title>How It Works</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="./css/main.css">
 
+
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
-
-<style>
-
-    
-</style>
-
-
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
+  <div class="container mw-100">
+    <nav class="nav justify-content-between p-3 my-3">
+      <div class="col-6 order-0 col-lg-2 text-center">
+        <img src="./logo/Logo.png" class="img-fluid">
+      </div>
+      <div class="col-12 col-lg-7 order-1 order-lg-0 nav d-flex flex-md-row justify-content-evenly">
+        <a class="nav-link m-3 " href="#">Home</a>
+        <a class="nav-link m-3" href="#">Features</a>
+        <a class="nav-link m-3" href="#">Pricing</a>
+        <a class="nav-link m-3" href="#">How It Works</a>
+        <a class="nav-link m-3" href="#">Support</a>
+      </div>
+      <div class="col-6 col-lg-3 order-0 order-lg-1 d-flex flex-md-row justify-content-center mt-3"
+        style="max-height: 3vh;">
+        <form action="/sign_up.html" method="get">
+          <button type="submit" class="btn btn-outline-primary mx-3 fw-bold">Try It Free</button>
+        </form>
+        <form action="/sign_in.html" method="get">
+          <button type="submit" class="btn btn-primary mx-3 pe-3 fw-bold">Sign In</button>
+        </form>
+      </div>
+    </nav>
+  </div>
 
-<!-- This is for Kevin -->
-  <!-- <main>
-    <div class="title">
-
-    </div> -->
-
+<main>
     <!-- Start below here Mabel-->
      <body>
       <div class="cotainer">
@@ -107,42 +164,48 @@
             </div>
           </div>
         </div>
-    
-    
-    
-    
-    
-  
-      
-    
-              
-           
-
-              
-              
-            
-
-
-
-
-
-
-          
-
-    
-
   </main>
   <footer>
     <!-- place footer here -->
+    <div class="container mw-100" style="background-color: #0850F8;">
+      <div class="row">
+        <div class="col text-center text-light" style="height: 7vh">
+          <h3 class="mt-4">Try Double Tap Today!</h3>
+          <p>Lets get started</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 text-end">
+          <form action="/sign_up.html" method="get">
+            <button type="submit" class="btn btn-green mx-3 fw-bold">Get Started
+              <i class="bi bi-chevron-double-right"></i>
+            </button>
+          </form>
+        </div>
+        <div class="col-6 text-start">
+          <form action="/sign_up.html" method="get">
+            <button type="submit" class="btn btn-light mx-3 fw-bold">
+              <i class="bi bi-chat-dots-fill"></i> Get Started
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <p class="text-light mt-3 pb-5">14 Day Free Trial &#9679 Manage Customers in Minutes &#9679 Cancel at Anytime
+          </p>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    </script>
 </body>
 
 </html>

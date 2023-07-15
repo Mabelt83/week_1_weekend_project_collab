@@ -1,94 +1,253 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <title>Home Page CRM</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+    .nav a {
+        color: black;
+    }
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    #sign_in {
+        font-weight: bold;
+    }
+
+    #try_it {
+        font-weight: bold;
+    }
+
+    #focusfont {
+        font-size: 5vh;
+    }
+
+    #focusfont2 {
+        font-size: 2.65vh;
+    }
+
+    #focusfont3 {
+        font-size: 1.4vh;
+    }
+
+    .btn-green,
+    .btn-green:active,
+    .btn-green:visited {
+        background-color: #7CD325 !important;
+        color: white !important;
+    }
+
+    .btn-green:hover {
+        background-color: #65ad1e !important;
+    }
+
+    .btn-light {
+        color: #0850F8 !important;
+    }
+
+    .box {
+        background: #c7d8ff;
+        border-radius: 50%;
+        width: 25vh;
+        height:25vh;
+}
+
+    /* .bg-black {
+    height: 200px;
+    width: 200px;
+} */
+</style>
+
+<head>
+    <title>Landing</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
-
-<style>
-
-    
-</style>
-
-
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
-    
 
+    <div class="container mw-100">
+        <nav class="nav justify-content-between p-3 my-3">
+            <div class="col-6 order-0 col-lg-2 text-center">
+                <img src="./logo/Logo.png" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-7 order-1 order-lg-0 nav d-flex flex-md-row justify-content-evenly">
+                <a class="nav-link m-3 " href="#">Home</a>
+                <a class="nav-link m-3" href="#">Features</a>
+                <a class="nav-link m-3" href="#">Pricing</a>
+                <a class="nav-link m-3" href="#">How It Works</a>
+                <a class="nav-link m-3" href="#">Support</a>
+            </div>
+            <div class="col-6 col-lg-3 order-0 order-lg-1 d-flex flex-md-row justify-content-center mt-3"
+                style="max-height: 3vh;">
+                <form action="/sign_up.html" method="get">
+                    <button type="submit" class="btn btn-outline-primary mx-3 fw-bold">Try It Free</button>
+                </form>
+                <form action="/sign_in.html" method="get">
+                    <button type="submit" class="btn btn-primary mx-3 pe-3 fw-bold">Sign In</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <Main>
 
-
-<!--Mabel's below-->
-
-<div class="container">
- 
-<br>
-</div>
-  <div class="bg-white">
-    <div class="container">
-      <div class="row g-5 justify-content-evenly">
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="row g-0">
-              <div class="col-6 col-md-5">
-                <img src="./Take Payments.png" class="card-img img fluid rounded-start" alt="collect info"/>
-              </div>
-              <div class="col-6 col-md-7">
-                <div class="card-body d-flex flex-column">
-                  
-                  <div class="h-100">
-                    <h3>Start accepting payments with Ease</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur 
-                      adipisicing elit. Possimus 
-                      odio unde natus sed magnam quis dolor nam ea, autem laboriosam amet optio sit,
-                      dolorum quasi doloremque harum hic. Voluptates, fugiat.</p>
-                      <div>
-                        <button type="button" class="btn btn-primary">Learn More</button>
-                      </div>
-                  </div>
+        <Body>
+            <div class="row">
+                <div class="col p-5 justify-content-between">
+                    <div class="card-body">
+                        <h1 id="focusfont" class="card-title ps-4"><strong>Focus on</strong></h1>
+                        <h1 id="focusfont" class="card-title ps-4 mb-2"><strong>Your Business</strong></h1>
+                        <h3 id="focusfont2" class="card-subtitle ps-4 mb-2">Let Us Handle Everything Else</h3>
+                        <h6 id="focusfont3" class="card-text text-body-secondary ps-4 py-4 mb-2 col">Subscription
+                            Billing, Powered with revenue retention tools and a seamless customer experience - without
+                            the technical hurdles.</h6>
+                        <div class="focus_buttons">
+                            <form action="/sign_up.html" method="get">
+                                <button type="submit" class="btn bg-primary btn-lg mx-3 fw-bold">Get Started
+                                    <i class="bi bi-chevron-double-right"></i>
+                                </button>
+                            </form>
+                            <form action="/sign_up.html" method="get">
+                                <button type="submit" class="btn bg-primary btn-lg mx-3 fw-bold">Get Started
+                                    <i class="bi bi-chevron-double-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
+                <div class="col">
+                    <a class=""> <img src="./how_it_works/Header-Side-1.png"></a>
+                </div>
             </div>
 
-          </div>
 
-        </div>
-      </div>
-    </div>
-  </div>
+            <!-- Middle content here -->
 
 
+           <div class="row ">
+                <div class="text-center my-4">
+                    <br>
+                    <div class="">
+                        <h3 class="solution_text text-center my-4">Solutions to fit your Business Needs</h3>
+                    </div>
+                    <div class="business_card row justify-content-center">
+                        <div class="col-6">
+                        <div class="card m-5 d-flex">
+                            <div class="d-flex justify-content-center">
+                                <div class="mt-2 box border border-2">
+                                    <div class="d-flex justify-content-center" style="margin-top:8vh">
+                                        <img class="image-fluid" src="/./landing/Path 60@2x.png" style="width:13vh">
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="card-body text-center">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a class="btn btn-primary" href="#">Go somewhere</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-6">
+                        <div class="card m-5 d-flex">
+                            <div class="d-flex justify-content-center">
+                                <div class="mt-2 box border border-2">
+                                    <div class="d-flex justify-content-center" style="margin-top:8vh">
+                                        <img class="image-fluid" src="/./landing/Path 60@2x.png" style="width:13vh">
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="card-body text-center">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a class="btn btn-primary" href="#">Go somewhere</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-6">
+                        <div class="card m-5 d-flex">
+                            <div class="d-flex justify-content-center">
+                                <div class="mt-2 box border border-2">
+                                    <div class="d-flex justify-content-center" style="margin-top:8vh">
+                                        <img class="image-fluid" src="/./landing/Path 60@2x.png" style="width:13vh">
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="card-body text-center">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a class="btn btn-primary" href="#">Go somewhere</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-6">
+                        <div class="card m-5 d-flex">
+                            <div class="d-flex justify-content-center">
+                                <div class="mt-2 box border border-2">
+                                    <div class="d-flex justify-content-center" style="margin-top:8vh">
+                                        <img class="image-fluid" src="/./landing/Path 60@2x.png" style="width:13vh">
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="card-body text-center">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a class="btn btn-primary" href="#">Go somewhere</a>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        
 
 
 
+        </Body>
+        <footer>
+            <!-- place footer here -->
+            <div class="container mw-100" style="background-color: #0850F8;">
+                <div class="row">
+                    <div class="col text-center text-light" style="height: 7vh">
+                        <h3 class="mt-4">Try Double Tap Today!</h3>
+                        <p>Lets get started</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 text-end">
+                        <form action="/sign_up.html" method="get">
+                            <button type="submit" class="btn btn-green mx-3 fw-bold">Get Started
+                                <i class="bi bi-chevron-double-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-6 text-start">
+                        <form action="/sign_up.html" method="get">
+                            <button type="submit" class="btn btn-light mx-3 fw-bold">
+                                <i class="bi bi-chat-dots-fill"></i> Get Started
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-light mt-3 pb-5">14 Day Free Trial &#9679 Manage Customers in Minutes &#9679
+                            Cancel at Anytime</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+            </script>
 
-
-
-
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+            </script>
+    </Main>
 
 </html>
