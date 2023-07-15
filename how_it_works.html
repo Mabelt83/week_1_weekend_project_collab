@@ -41,7 +41,10 @@
     color: #0850F8 !important;
   }
   
-  
+  #hr_width {
+    display: flex;
+    justify-content: center;
+}
   
   
 </style>
@@ -89,7 +92,7 @@
   </div>
 
 <main>
-    <!-- Start below here Mabel-->
+
       <body>
         <div class="row row-cols-3 justify-content-evenly">
           <div class="col-4" style="width: 35rem; min-width: 35%;">
@@ -98,8 +101,13 @@
                   <h1 id="focusfont" class="card-title mb-2"><strong>Your Business</strong></h1>
                   <h3 id="focusfont2" class="card-subtitle mb-2">Let Us Handle Everything Else</h3>
                   <h6 id="focusfont3" class="card-text text-body-secondary py-4 mb-2 col">Subscription Billing, Powered with revenue retention tools and a seamless customer experience - without the technical hurdles.</h6>
-              <div class="row justify-content-start">    
-                  <div class="col focus_buttons">
+              <div class="row d-flex justify-content-start">    
+                  <div class="col d-flex focus_buttons">
+                      <form action="/sign_up.html" method="get">
+                          <button type="submit" class="btn bg-primary btn-lg mx-3 fw-bold">Get Started
+                              <i class="bi bi-chevron-double-right"></i>
+                          </button>
+                      </form>
                       <form action="/sign_up.html" method="get">
                           <button type="submit" class="btn bg-primary btn-lg mx-3 fw-bold">Get Started
                               <i class="bi bi-chevron-double-right"></i>
@@ -107,13 +115,6 @@
                       </form>
                   </div>
                   
-                  <div class="col focus_buttons">
-                      <form action="/sign_up.html" method="get">
-                          <button type="submit" class="btn bg-primary btn-lg mx-3 fw-bold">Get Started
-                              <i class="bi bi-chevron-double-right"></i>
-                          </button>
-                      </form>
-                  </div>
               </div>
               </div>
               <h6 id="focusfont3" class="pt-4">Already using <b>Double</b> Tap? <b>Sign In</b> </h6>
@@ -126,6 +127,13 @@
               <a class=""> <img src="./how_it_works/Header-Side-1.png" style="width: 40rem;"></a>
           </div>
       </div>
+
+
+              <!-- This is where the Horizontal Line goes -->
+          <div id="hr_width">    
+              <hr width="50%">
+          </div>    
+              <!-- This is where the Horizontal Line goes -->
       <div class="container">
        <h1>How it Works</h1>
     </div>
