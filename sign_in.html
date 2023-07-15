@@ -27,6 +27,19 @@
 #focusfont3 {
     font-size: 1.4vh;
 }
+
+.btn-green, .btn-green:active, .btn-green:visited {
+    background-color: #7CD325 !important;
+    color:white !important;
+}
+    
+.btn-green:hover{
+  background-color: #65ad1e !important;
+}    
+
+.btn-light{
+  color:#0850F8 !important;
+}
     
 </style>
 
@@ -138,6 +151,35 @@
 
   <footer>
     <!-- place footer here -->
+    <div class="container mw-100" style="background-color: #0850F8;">
+      <div class="row">
+        <div class="col text-center text-light" style="height:20vh">
+          <h3 class="mt-4">Try Double Tap Today!</h3>
+          <p>Lets get started</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 text-end">
+          <form action="/sign_up.html" method="get">
+            <button type="submit" class="btn btn-green mx-3 fw-bold">Get Started 
+              <i class="bi bi-chevron-double-right"></i>
+            </button>
+          </form>
+        </div>
+        <div class="col-6 text-start">
+          <form action="/sign_up.html" method="get">
+            <button type="submit" class="btn btn-light mx-3 fw-bold">
+              <i class="bi bi-chat-dots-fill"></i> Get Started
+            </button>
+          </form>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col text-center">
+        <p class="text-light mt-3">14 Day Free Trial &#9679 Manage Customers in Minutes &#9679 Cancel at Anytime</p>
+      </div>
+    </div>
+    </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
