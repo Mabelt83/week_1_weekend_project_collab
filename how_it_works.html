@@ -2,6 +2,11 @@
 <html lang="en">
 
 <style>
+
+* {
+    border: 2px solid red;
+}
+
   .nav a {
     color: black;
   }
@@ -41,7 +46,10 @@
     color: #0850F8 !important;
   }
   
-  
+  #hr_width {
+    display: flex;
+    justify-content: center;
+}
   
   
 </style>
@@ -89,9 +97,44 @@
   </div>
 
 <main>
-    <!-- Start below here Mabel-->
-     <body>
-      <div class="cotainer">
+
+      <body>
+        <div class="row justify-content-around">
+          <div class="col-3" style="width: 35rem; min-width: 35%;">
+              <div class="card-body">
+                  <h1 id="focusfont" class="card-title"><strong>Focus on</strong></h1>
+                  <h1 id="focusfont" class="card-title mb-2"><strong>Your Business</strong></h1>
+                  <h3 id="focusfont2" class="card-subtitle mb-2">Let Us Handle Everything Else</h3>
+                  <h6 id="focusfont3" class="card-text text-body-secondary py-4 mb-2 col">Subscription Billing, Powered with revenue retention tools and a seamless customer experience - without the technical hurdles.</h6>
+                  <div class="row d-flex justify-content-start">    
+                      <div class="col d-flex focus_buttons">
+                          <form action="/sign_up.html" method="get">
+                          <button type="submit" class="btn bg-primary btn-lg mx-3 fw-bold text-light">Sign Up Free <i class="bi bi-chevron-double-right"></i>
+                          </button>
+                          </form>
+                          <form action="/sign_in.html" method="get"></form>
+                          <button type="submit" class="btn bg-light text-primary border-primary btn-lg mx-3 fw-bold bi-chat-dots-fill"> Chat With Us</button>
+                      </div>
+                  </div>
+              </div>
+                <h6 id="focusfont3" class="pt-4">Already using <b>Double</b> Tap? <b>Sign In</b> </h6>
+                <div id="focusfont3" class="col">
+                  <p class="mt-3 pb-5">14 Day Free Trial &#9679 Manage Customers in Minutes &#9679
+                      Cancel at Anytime</p>
+                </div>
+          </div>
+        <div class="col-3 ">
+            <img class="img-fluid" src="./how_it_works/Header-Side-1.png">
+        </div>
+      </div>
+
+
+              <!-- This is where the Horizontal Line goes -->
+          <div id="hr_width">    
+              <hr width="50%">
+          </div>    
+              <!-- This is where the Horizontal Line goes -->
+      <div class="container">
        <h1>How it Works</h1>
     </div>
       <div class="bg-white">
@@ -101,7 +144,7 @@
               <div class="card">
                 <div class="row g-0">
                   <div class="col-6 col-md-5">
-                    <img src="./Collect-info.png" class="card-img img fluid rounded-start" alt="collect info"/>
+                    <img src="./how_it_works/Collect-info.png" class="card-img img fluid rounded-start" alt="collect info"/>
                   </div>
                   <div class="col-6 col-md-7">
                     <div class="card-body d-flex flex-column">
@@ -143,7 +186,7 @@
                 <div class="card">
                   <div class="row g-0">
                     <div class="col-6 col-md-5">
-                      <img src="./Take Payments.png" class="card-img img fluid rounded-start" alt="collect info"/>
+                      <img src="./how_it_works/Take Payments.png" class="card-img img fluid rounded-start" alt="collect info"/>
                     </div>
                     <div class="col-6 col-md-7">
                       <div class="card-body d-flex flex-column">
@@ -166,38 +209,37 @@
         </div>
   </main>
   <footer>
-    <!-- place footer here -->
     <div class="container mw-100" style="background-color: #0850F8;">
-      <div class="row">
-        <div class="col text-center text-light" style="height: 7vh">
-          <h3 class="mt-4">Try Double Tap Today!</h3>
-          <p>Lets get started</p>
+        <div class="row p-2">
+            <div class="col text-center text-light" style="height: 8vh">
+                <h3 class="mt-4">Try Double Tap Today!</h3>
+                <p>Lets get started</p>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-6 text-end">
-          <form action="/sign_up.html" method="get">
-            <button type="submit" class="btn btn-green mx-3 fw-bold">Get Started
-              <i class="bi bi-chevron-double-right"></i>
-            </button>
-          </form>
+        <div class="row p-2">
+            <div class="col-6 text-end p-2">
+                <form action="/sign_up.html" method="get">
+                    <button type="submit" class="btn btn-green mx-3 fw-bold">Get Started
+                        <i class="bi bi-chevron-double-right"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="col-6 text-start p-2">
+                <form action="/sign_up.html" method="get">
+                    <button type="submit" class="btn btn-light mx-3 fw-bold">
+                        <i class="bi bi-chat-dots-fill"></i> Get Started
+                    </button>
+                </form>
+            </div>
         </div>
-        <div class="col-6 text-start">
-          <form action="/sign_up.html" method="get">
-            <button type="submit" class="btn btn-light mx-3 fw-bold">
-              <i class="bi bi-chat-dots-fill"></i> Get Started
-            </button>
-          </form>
+        <div class="row">
+            <div class="col text-center p-2">
+                <p class="text-light mt-3 pb-5">14 Day Free Trial &#9679 Manage Customers in Minutes &#9679
+                    Cancel at Anytime</p>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col text-center">
-          <p class="text-light mt-3 pb-5">14 Day Free Trial &#9679 Manage Customers in Minutes &#9679 Cancel at Anytime
-          </p>
-        </div>
-      </div>
     </div>
-  </footer>
+</footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
